@@ -3,7 +3,7 @@ const { cmd } = require("../command");
 const moment = require("moment");
 
 let botStartTime = Date.now(); // Enregistrement de l'heure de démarrage du bot
-const ALIVE_IMG = "https://i.ibb.co/60pdvSxw/mrfrankofc.jpg"; // Assurez-vous que cette URL est valide
+const ALIVE_IMG = "https://i.ibb.co/5XNzHkVp/3908.jpg"; // Assurez-vous que cette URL est valide
 
 cmd({
     pattern: "alive",
@@ -22,7 +22,7 @@ cmd({
         const runtimeMinutes = Math.floor((runtimeMilliseconds / (1000 * 60)) % 60);
         const runtimeHours = Math.floor(runtimeMilliseconds / (1000 * 60 * 60));
 
-        const status = `╭━━〔 *DEVIL-TECH-MD* 〕━━┈⊷
+        const status = `╭━━〔 *CHAMA-MD* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• *⏳Uptime*:  ${runtime(process.uptime())} 
 ┃◈┃• *📟 Ram usage*: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${(os.totalmem() / 1024 / 1024).toFixed(2)}MB
@@ -31,7 +31,7 @@ cmd({
 ┃◈┃• *🧬 Version*: 1.0.0 BETA
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ Cʏʙᴇʀ Lᴏᴋᴜ Aꜱʜᴜᴜ Oꜰᴄ
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ Cʜɪɴᴅᴜ Oꜰᴄ
         `.trim();
 
         // Vérifier si l'image est définie
