@@ -48,8 +48,8 @@ cmd({
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363395467876104@newsletter',
-                    newsletterName: 'Cʏʙᴇʀ Lᴏᴋᴜ Aꜱʜᴜᴜ Oꜰᴄ 🍁',
+                    newsletterJid: '120363395257960673@newsletter',
+                    newsletterName: 'CHAMA 🍁',
                     serverMessageId: 143
                 }
             }
