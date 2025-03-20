@@ -3,8 +3,8 @@ const { cmd } = require("../command");
 
 cmd({
   pattern: "fbdl",
-  alias: ["facebook", "fb"],
-  react: '⏰',
+  alias: ["facebook", "fb", "ꜰ"],
+  react: '🌐',
   desc: "Download videos from Facebook.",
   category: "download",
   use: ".fbdl <Facebook video URL>",
@@ -18,7 +18,7 @@ cmd({
     }
 
     // Add a reaction to indicate processing
-    await conn.sendMessage(from, { react: { text: '⏳', key: m.key } });
+    await conn.sendMessage(from, { react: { text: '⬇️', key: m.key } });
 
     // Prepare the API URL
     const apiUrl = `https://apis.davidcyriltech.my.id/facebook2?url=${encodeURIComponent(fbUrl)}`;
@@ -52,7 +52,7 @@ cmd({
     // Send the video with details
     await conn.sendMessage(from, {
       video: videoBuffer,
-      caption: `*🫟𝐃𝐄𝐕𝐈𝐋-𝐓𝐄𝐂𝐇-𝐌𝐃 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃*\n\n` +
+      caption: `*🫟𝗖𝗛𝗔𝗠𝗔 〽️𝗗 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃✴️*\n\n` +
         `🔖 *TITLE*: ${title}\n` +
         `📏 *QUALITY*: ${downloads.find(d => d.quality === "HD") ? "HD" : "SD"}\n\n` +
         `> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀ ʟᴏᴋᴜ ᴀꜱʜᴜᴜ ᴏꜰᴄ*`,
@@ -61,8 +61,8 @@ cmd({
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-          newsletterJid: '120363395467876104@newsletter',
-          newsletterName: '『 𝐃𝐄𝐕𝐈𝐋-𝐓𝐄𝐂𝐇-𝐌𝐃 𝐅𝐁 𝐃𝐋 』',
+          newsletterJid: '120363395257960673@newsletter',
+          newsletterName: '『 𝗖𝗛𝗔𝗠𝗔 〽️𝗗 𝐅𝐁 𝐃𝐋 』',
           serverMessageId: 143
         }
       }
