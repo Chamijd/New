@@ -34,7 +34,7 @@ cmd({
 
     pattern: "menu",
 
-    react: "🍭",
+    react: "📂",
 
     alias: ["allmenu","bot","commands"],
 
@@ -294,7 +294,7 @@ let madeMenu = `*╭══〘〘 ${config.BOT_NAME} 〙〙*
 *├⬡ .ᴅᴀɪʟʏꜰᴀᴄᴛ*
 *├⬡ .ᴍɪɴᴜᴛᴏʀ*
 *┕──────────────────❒*
-> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ Cʏʙᴇʀ Lᴏᴋᴜ Aꜱʜᴜᴜ Oꜰᴄ*`
+> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ Cʜɪɴᴅᴜ *`
 
 await conn.sendMessage(from,{image:{url: config.ALIVE_IMG},caption:madeMenu,
                              contextInfo: {
@@ -302,8 +302,8 @@ await conn.sendMessage(from,{image:{url: config.ALIVE_IMG},caption:madeMenu,
     forwardingScore: 999,
     isForwarded: true,
     forwardedNewsletterMessageInfo: {
-      newsletterJid: '120363395467876104@newsletter',
-      newsletterName: '𓆩ྀི͛DEVIL-TECH-MD BOT MENU͛',
+      newsletterJid: 'Cʜɪɴᴅᴜ ',
+      newsletterName: 'CHAMA BOT MENU͛',
       serverMessageId: 999
     }
   }
