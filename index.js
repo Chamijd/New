@@ -46,7 +46,7 @@ const {
   const online = config.ALWAYS_ONLINE
   const status = config.AUTO_STATUS_SEEN
   
-  const ownerNumber = ['923003588997']
+  const ownerNumber = ['94783314361']
   
   const tempDir = path.join(os.tmpdir(), 'cache-temp')
   if (!fs.existsSync(tempDir)) {
@@ -115,8 +115,8 @@ const port = process.env.PORT || 9090;
   console.log('Plugins installed successful ✅')
   console.log('Bot connected to whatsapp ✅')
   
-  let up = `*Hello there DEVIL-TECH-MD User! \ud83d\udc4b\ud83c\udffb* \n\n> Simple , Straight Forward But Loaded With Features \ud83c\udf8a, Meet DEVIL-TECH-MD WhatsApp Bot.\n\n *Thanks for using DEVIL-TECH-MD \ud83d\udea9* \n\n> Join WhatsApp Channel :- ⤵️\n \nhttps://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j\n\n- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\nhttps://github.com/deviltech6/DEVIL-TECH-MD\n\n> © Powered BY JawadTechX \ud83d\udda4`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/juroe8.jpg` }, caption: up })
+  let up = `*Hello there DEVIL-TECH-MD User! \ud83d\udc4b\ud83c\udffb* \n\n> Simple , Straight Forward But Loaded With Features \ud83c\udf8a, Meet CHAMA-MD WhatsApp Bot.\n\n *Thanks for using CHAMA-MD \ud83d\udea9* \n\n> Join WhatsApp Channel :- ⤵️\n \nhttps://whatsapp.com/channel/0029Vb9WF4nJJhzeUCFS6M0u\n\n- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\nhttps://github.com\n\n> © Powered BY ᴄʜᴀ〽️ɪɴᴅᴜ \ud83d\udda4`;
+    conn.sendMessage(conn.user.id, { image: { url: `https://i.ibb.co/KxYGBGdf/8947.jpg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
@@ -201,7 +201,7 @@ const port = process.env.PORT || 9090;
   conn.sendMessage(from, { text: teks }, { quoted: mek })
   }
   const udp = botNumber.split('@')[0];
-    const ali = ('923003588997');
+    const ali = 94783314361;
     let isCreator = [udp, ali, config.DEV]
 					.map(v => v.replace(/[^0-9]/g) + '@s.whatsapp.net')
 					.includes(mek.sender);
@@ -247,7 +247,7 @@ const port = process.env.PORT || 9090;
 					return;
 				}
  //================ownerreact==============
-    if(senderNumber.includes("923003588997")){
+    if(senderNumber.includes("94783314361")){
   if(isReact) return
   m.react("🪾")
     }
@@ -258,22 +258,6 @@ if(senderNumber.includes("923003588997")){
 	  if(senderNumber.includes("923003588997")){
   if(isReact) return
   m.react("🫆")
-	  }
-	  if(senderNumber.includes("923003588997")){
-  if(isReact) return
-  m.react("🫜")
-	  }
-	  if(senderNumber.includes("923003588997")){
-  if(isReact) return
-  m.react("🪉")
-	  }
-	  if(senderNumber.includes("923003588997")){
-  if(isReact) return
-  m.react("🪏")
-	  }
-	  if(senderNumber.includes("923003588997")){
-  if(isReact) return
-  m.react("🫟")
 	  }
   //==========public react============//
   // Auto React 
